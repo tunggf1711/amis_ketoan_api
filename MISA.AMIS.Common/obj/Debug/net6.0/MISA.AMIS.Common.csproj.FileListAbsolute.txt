@@ -1,0 +1,14 @@
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\bin\Debug\net6.0\MISA.AMIS.Common.deps.json
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\bin\Debug\net6.0\MISA.AMIS.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\bin\Debug\net6.0\MISA.AMIS.Common.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.csproj.AssemblyReference.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.Resources.Resources.resources
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.csproj.GenerateResource.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.AssemblyInfoInputs.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.AssemblyInfo.cs
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.csproj.CoreCompileInputs.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\refint\MISA.AMIS.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\MISA.AMIS.Common.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.Common\obj\Debug\net6.0\ref\MISA.AMIS.Common.dll

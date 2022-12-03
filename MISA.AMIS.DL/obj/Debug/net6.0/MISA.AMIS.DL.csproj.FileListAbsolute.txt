@@ -1,0 +1,15 @@
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\bin\Debug\net6.0\MISA.AMIS.DL.deps.json
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\bin\Debug\net6.0\MISA.AMIS.DL.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\bin\Debug\net6.0\MISA.AMIS.DL.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\bin\Debug\net6.0\MISA.AMIS.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\bin\Debug\net6.0\MISA.AMIS.Common.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.csproj.AssemblyReference.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.AssemblyInfoInputs.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.AssemblyInfo.cs
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.csproj.CoreCompileInputs.cache
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.csproj.CopyComplete
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\refint\MISA.AMIS.DL.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\MISA.AMIS.DL.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.DL\obj\Debug\net6.0\ref\MISA.AMIS.DL.dll
