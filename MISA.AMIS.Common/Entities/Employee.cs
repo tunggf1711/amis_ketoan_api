@@ -124,6 +124,11 @@ namespace MISA.AMIS.Common.Entities
         /// </summary>
         public string? ModifiedBy { get; set; }
 
+        /// <summary>
+        /// Tên phòng ban
+        /// </summary>
+        public string? DepartmentName { get; set; }
+
         #endregion
     }
 }

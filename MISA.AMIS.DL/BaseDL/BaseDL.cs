@@ -197,6 +197,10 @@ namespace MISA.AMIS.DL.BaseDL
                 {
                     parameters.Add($"@{typeof(T).Name}Id", recordId);
                 }
+                else if (string.Equals(property.Name, "ModifiedDate"))
+                {
+                    parameters.Add("@ModifiedDate", DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss"));
+                }
                 else
                 {
                     parameters.Add($"@{property.Name}", property.GetValue(record));
