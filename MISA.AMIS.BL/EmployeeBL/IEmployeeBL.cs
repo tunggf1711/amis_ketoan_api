@@ -14,6 +14,10 @@ namespace MISA.AMIS.BL.EmployeeBL
     /// </summary>
     public interface IEmployeeBL : IBaseBL<Employee>
     {
-
+        /// <summary>
+        /// Xuất khẩu dữ liệu file excel
+        /// </summary>
+        /// <returns></returns>
+        ServiceResponseDTO GetExportExcelEmployee();
     }
 }

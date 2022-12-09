@@ -38,3 +38,16 @@ C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\
 C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\MISA.AMIS.BL.pdb
 C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\MISA.AMIS.Common.pdb
 C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\MISA.AMIS.DL.pdb
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\EPPlus.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tunggf1711\Desktop\C#tutorial\MISA.AMIS\MISA.AMIS.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

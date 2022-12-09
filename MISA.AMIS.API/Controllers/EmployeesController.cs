@@ -28,5 +28,47 @@ namespace MISA.AMIS.API.Controllers
         #endregion
 
 
+        /// <summary>
+        /// Xuất khẩu file excel dữ liệu toàn bộ nhân viên
+        /// </summary>
+        /// <returns>Dữ liệu file excel</returns>
+        [HttpGet]
+        [Route("export")]
+        public IActionResult GetExportExcelEmployee()
+        {
+            try
+            {
+                var serviceReponse = _employeeBL.GetExportExcelEmployee();
+                if (serviceReponse.IsSuccess)
+                {
+                    string excelName = $"Employee-{DateTime.Now.ToString("ddMMyyyyHHmmssfff")}.xlsx";
+                    return File((MemoryStream)(serviceReponse.Data), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", excelName);
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, new ErrorResponseDTO
+                    {
+                        ErrorCode = ErrorCode.ErrorCode_NotFound,
+                        DevMsg = Resources.DevMsg_NotFound,
+                        UserMsg = Resources.UserMsg_NotFound,
+                        MoreInfo = Resources.MoreInfo,
+                        TraceId = HttpContext.TraceIdentifier
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.ToString());
+                return StatusCode(StatusCodes.Status500InternalServerError, new ErrorResponseDTO
+                {
+                    ErrorCode = ErrorCode.ErrorCode_Exception,
+                    DevMsg = Resources.DevMsg_Exception,
+                    UserMsg = Resources.UserMsg_Exception,
+                    MoreInfo = Resources.MoreInfo,
+                    TraceId = HttpContext.TraceIdentifier
+                });
+            }
+        }
     }
 }

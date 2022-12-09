@@ -34,7 +34,7 @@ namespace MISA.AMIS.DL.BaseDL
         /// Lấy mã bản ghi lớn nhất
         /// </summary>
         /// <returns>Mã bản ghi lớn nhất</returns>
-        string GetMaxCode();
+        int GetMaxCode();
 
         /// <summary>
         /// Lấy paging bản ghi và tìm kiếm bản ghi
@@ -73,6 +73,13 @@ namespace MISA.AMIS.DL.BaseDL
         /// <param name="recordId">Id bản ghi cần xoá</param>
         /// <returns>Số bản ghi đã xoá</returns>
         int DeleteRecord(Guid recordId);
+
+        /// <summary>
+        /// Xoá nhiều bản ghi
+        /// </summary>
+        /// <param name="recordIds">Id các bản ghi cần xoá</param>
+        /// <returns>Số bản ghi đã xoá</returns>
+        int DeleteMultipleRecord(List<Guid> recordIds);
         #endregion
     }
 }

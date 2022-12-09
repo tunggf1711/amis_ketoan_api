@@ -154,6 +154,45 @@
   <data name="Error_Employee_Name_Required" xml:space="preserve">
     <value>Tên nhân viên không được để trống</value>
   </data>
+  <data name="Excel_Display_BankAccountNumber" xml:space="preserve">
+    <value>Số tài khoản</value>
+  </data>
+  <data name="Excel_Display_BankName" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="Excel_Display_DateOfBirth" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="Excel_Display_DepartmentName" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="Excel_Display_EmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="Excel_Display_EmployeeName" xml:space="preserve">
+    <value>Tên nhân viên</value>
+  </data>
+  <data name="Excel_Display_Female" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="Excel_Display_Gender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="Excel_Display_Index" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="Excel_Display_Male" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="Excel_Display_Other" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="Excel_Display_Position" xml:space="preserve">
+    <value>Chức danh</value>
+  </data>
+  <data name="Excel_Employee_Title" xml:space="preserve">
+    <value>Danh sách nhân viên</value>
+  </data>
   <data name="MoreInfo" xml:space="preserve">
     <value>https://amisapp.misa.vn/</value>
     <comment>Đường dẫn mô tả lỗi</comment>

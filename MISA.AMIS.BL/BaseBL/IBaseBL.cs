@@ -66,6 +66,13 @@ namespace MISA.AMIS.BL.BaseBL
         /// <param name="recordId">Id bản ghi cần xoá</param>
         /// <returns>Số bản ghi đã xoá</returns>
         ServiceResponseDTO DeleteRecord(Guid recordId);
+
+        /// <summary>
+        /// Xoá nhiều bản ghi
+        /// </summary>
+        /// <param name="recordIds">id các bản ghi cần xoá</param>
+        /// <returns>Dữ liệu xoá thành công hay thất bại</returns>
+        ServiceResponseDTO DeleteMultipleRecord(List<Guid> recordIds);
         #endregion
     }
 }

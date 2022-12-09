@@ -69,17 +69,17 @@ namespace MISA.AMIS.DL.BaseDL
         /// Lấy mã bản ghi lớn nhất
         /// </summary>
         /// <returns>Mã bản ghi lớn nhất</returns>
-        public string GetMaxCode()
+        public int GetMaxCode()
         {
             //Chuẩn bị stored procedure
             string storedProcedureName = string.Format(ProcedureName.PROC_GET_MAXCODE, typeof(T).Name);
 
             //Khởi tạo kết nối đến database
             string connectionString = DatabaseContext.ConnectionString;
-            string maxCode;
+            int maxCode;
             using (var mySqlConnection = new MySqlConnection(connectionString))
             {
-                maxCode = mySqlConnection.QueryFirstOrDefault<string>(storedProcedureName, commandType: System.Data.CommandType.StoredProcedure);
+                maxCode = mySqlConnection.QueryFirstOrDefault<int>(storedProcedureName, commandType: System.Data.CommandType.StoredProcedure);
             }
             return maxCode;
 
@@ -237,6 +237,39 @@ namespace MISA.AMIS.DL.BaseDL
             return numberOfDeleteRow;
 
         }
+
+        /// <summary>
+        /// Xoá nhiều bản ghi 1 lúc
+        /// </summary>
+        /// <param name="recordIds">Id của nhiều bản ghi cần xoá</param>
+        /// <returns></returns>
+        public int DeleteMultipleRecord(List<Guid> recordIds)
+        {
+            //Chuẩn bị stored procedure name
+            string storedProcedureName = string.Format(ProcedureName.PROC_DELETE_MULTI_RECORD, typeof(T).Name);
+            var parameters = new DynamicParameters();
+            string recordIdsDelete = "";
+            for (var i = 0; i < recordIds.Count; i++)
+            {
+                if (i == recordIds.Count - 1)
+                {
+                    recordIdsDelete += $"\'{recordIds[i]}\'";
+                }
+                else
+                {
+                    recordIdsDelete += $"\'{recordIds[i]}\',";
+                }
+            }
+            parameters.Add($"@{typeof(T).Name}IdArray", recordIdsDelete);
+            string connectionString = DatabaseContext.ConnectionString;
+            int numberOfDeleteRow;
+            using (var mySqlConnection = new MySqlConnection(connectionString))
+            {
+                numberOfDeleteRow = mySqlConnection.QueryFirstOrDefault<int>(storedProcedureName, parameters, commandType: System.Data.CommandType.StoredProcedure);
+            }
+            return numberOfDeleteRow;
+        }
+
         #endregion
     }
 }

@@ -29,6 +29,8 @@ namespace MISA.AMIS.BL.BaseBL
         {
             _baseDL = baseDL;
         }
+
+
         #endregion
 
 
@@ -82,12 +84,8 @@ namespace MISA.AMIS.BL.BaseBL
         /// <returns>Mã bản ghi mới</returns>
         public string GetNewCode()
         {
-            var maxCode = _baseDL.GetMaxCode();
-            int newCode;
-            int preFixRecordCodeLength = (int)typeof(RecordCodeLength).GetField($"PREFIX_{typeof(T).Name.ToUpper()}_CODE_LENGTH").GetValue(null);
-            int postFixRecordCodeLength = (int)typeof(RecordCodeLength).GetField($"POSTFIX_{typeof(T).Name.ToUpper()}_CODE_LENGTH").GetValue(null);
-            Int32.TryParse(maxCode.Substring(preFixRecordCodeLength, postFixRecordCodeLength), out newCode);
-            return (string)typeof(PrefixRecordCode).GetField($"PREFIX_{typeof(T).Name.ToUpper()}").GetValue(null) + (newCode + 1).ToString().PadLeft(postFixRecordCodeLength, '0');
+            int maxCode = _baseDL.GetMaxCode();
+            return (string)typeof(PrefixRecordCode).GetField($"PREFIX_{typeof(T).Name.ToUpper()}").GetValue(null) + (maxCode + 1).ToString();
         }
 
         /// <summary>
@@ -243,6 +241,37 @@ namespace MISA.AMIS.BL.BaseBL
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Xoá nhiều bản ghi theo id
+        /// </summary>
+        /// <param name="recordIds">Id các bản ghi cần xoá</param>
+        /// <returns>Số bản ghi đã xoá thành công</returns>
+        public ServiceResponseDTO DeleteMultipleRecord(List<Guid> recordIds)
+        {
+            if (recordIds.Count <= 0)
+            {
+                return new ServiceResponseDTO
+                {
+                    IsSuccess = false,
+                    Data = Resources.UserMsg_NotFound
+                };
+            }
+            int numberOfDeleteRow = _baseDL.DeleteMultipleRecord(recordIds);
+            if (numberOfDeleteRow != recordIds.Count)
+            {
+                return new ServiceResponseDTO
+                {
+                    IsSuccess = false,
+                    Data = Resources.UserMsg_Exception
+                };
+            }
+            return new ServiceResponseDTO
+            {
+                IsSuccess = true,
+                Data = numberOfDeleteRow
+            };
         }
         #endregion
     }

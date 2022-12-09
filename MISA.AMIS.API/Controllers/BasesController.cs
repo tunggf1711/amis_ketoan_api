@@ -331,6 +331,47 @@ namespace MISA.AMIS.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Xoá nhiều bản ghi
+        /// </summary>
+        /// <param name="recordIds">Id các bản ghi cần xoá</param>
+        /// <returns>Số bản ghi đã xoá thành công</returns>
+        [HttpPost]
+        [Route("multi-delete")]
+        public IActionResult DeleteMultipleRecord([FromBody] List<Guid> recordIds)
+        {
+            try
+            {
+                var serviceReponse = _baseBL.DeleteMultipleRecord(recordIds);
+                if (serviceReponse.IsSuccess)
+                {
+                    return StatusCode(StatusCodes.Status200OK, serviceReponse.Data);
+                }
+                return StatusCode(StatusCodes.Status400BadRequest, new ErrorResponseDTO
+                {
+                    ErrorCode = ErrorCode.ErrorCode_Validate,
+                    DevMsg = Resources.DevMsg_Validate,
+                    UserMsg = Resources.UserMsg_Validate,
+                    MoreInfo = serviceReponse.Data,
+                    TraceId = HttpContext.TraceIdentifier
+                });
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.ToString());
+                return StatusCode(StatusCodes.Status500InternalServerError, new ErrorResponseDTO
+                {
+                    ErrorCode = ErrorCode.ErrorCode_Exception,
+                    DevMsg = Resources.DevMsg_Exception,
+                    UserMsg = Resources.UserMsg_Exception,
+                    MoreInfo = Resources.MoreInfo,
+                    TraceId = HttpContext.TraceIdentifier
+                });
+            }
+
+        }
+
         #endregion
     }
 }

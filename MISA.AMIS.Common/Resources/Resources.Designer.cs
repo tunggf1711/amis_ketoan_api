@@ -151,6 +151,123 @@ namespace MISA.AMIS.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Số tài khoản.
+        /// </summary>
+        public static string Excel_Display_BankAccountNumber {
+            get {
+                return ResourceManager.GetString("Excel_Display_BankAccountNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tên ngân hàng.
+        /// </summary>
+        public static string Excel_Display_BankName {
+            get {
+                return ResourceManager.GetString("Excel_Display_BankName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ngày sinh.
+        /// </summary>
+        public static string Excel_Display_DateOfBirth {
+            get {
+                return ResourceManager.GetString("Excel_Display_DateOfBirth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tên đơn vị.
+        /// </summary>
+        public static string Excel_Display_DepartmentName {
+            get {
+                return ResourceManager.GetString("Excel_Display_DepartmentName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mã nhân viên.
+        /// </summary>
+        public static string Excel_Display_EmployeeCode {
+            get {
+                return ResourceManager.GetString("Excel_Display_EmployeeCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tên nhân viên.
+        /// </summary>
+        public static string Excel_Display_EmployeeName {
+            get {
+                return ResourceManager.GetString("Excel_Display_EmployeeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nữ.
+        /// </summary>
+        public static string Excel_Display_Female {
+            get {
+                return ResourceManager.GetString("Excel_Display_Female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới tính.
+        /// </summary>
+        public static string Excel_Display_Gender {
+            get {
+                return ResourceManager.GetString("Excel_Display_Gender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STT.
+        /// </summary>
+        public static string Excel_Display_Index {
+            get {
+                return ResourceManager.GetString("Excel_Display_Index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nam.
+        /// </summary>
+        public static string Excel_Display_Male {
+            get {
+                return ResourceManager.GetString("Excel_Display_Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khác.
+        /// </summary>
+        public static string Excel_Display_Other {
+            get {
+                return ResourceManager.GetString("Excel_Display_Other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chức danh.
+        /// </summary>
+        public static string Excel_Display_Position {
+            get {
+                return ResourceManager.GetString("Excel_Display_Position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Danh sách nhân viên.
+        /// </summary>
+        public static string Excel_Employee_Title {
+            get {
+                return ResourceManager.GetString("Excel_Employee_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://amisapp.misa.vn/.
         /// </summary>
         public static string MoreInfo {

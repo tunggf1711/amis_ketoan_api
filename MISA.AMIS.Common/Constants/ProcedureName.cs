@@ -53,6 +53,11 @@ namespace MISA.AMIS.Common.Constants
         /// Proc xoá bản ghi theo ID
         /// </summary>
         public static string PROC_DELETE_RECORD_BY_ID = "Proc_{0}_Delete";
+
+        /// <summary>
+        /// Proc xoá nhiều bản ghi theo id
+        /// </summary>
+        public static string PROC_DELETE_MULTI_RECORD = "Proc_{0}_DeleteMultiple";
         #endregion
     }
 }
